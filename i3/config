@@ -208,4 +208,7 @@ exec_always feh --bg-scale $HOME/Pictures/wallpaper.png
 exec_always xrandr --output LVDS-1 --off --output DP-1 --off --output VGA-1 --primary --mode 1280x1024 --pos 0x0 --rotate normal
 
 # rofi
-bindsym $mod+d exec rofi -show run -theme Arc-Dark
+bindsym $mod+d exec rofi -show drun -theme Arc-Dark
+
+# open windows in specefic workspaces
+assign [class="Chromium"] 2
