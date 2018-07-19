@@ -210,5 +210,3 @@ exec_always xrandr --output LVDS-1 --off --output DP-1 --off --output VGA-1 --pr
 # rofi
 bindsym $mod+d exec rofi -show drun -theme Arc-Dark
 
-# open windows in specefic workspaces
-assign [class="Chromium"] 2
