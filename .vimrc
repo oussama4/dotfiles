@@ -25,13 +25,18 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 call minpac#add('Valloric/YouCompleteMe')
 call minpac#add('itchyny/lightline.vim')
 call minpac#add('altercation/vim-colors-solarized')
+call minpac#add('honza/vim-snippets')
+call minpac#add('SirVer/ultisnips')
+call minpac#add('tpope/vim-commentary')
+call minpac#add('fatih/vim-go')
 
 " youcompleteme configuration
 let g:ycm_autoclose_preview_window_after_completion=1
-let g:ycm_auto_trigger = 1
-let g:ycm_python_binary_path = '/usr/bin/python3'
+"let g:ycm_auto_trigger = 1
+"let g:ycm_python_binary_path = '/usr/bin/python3'
+let g:UltiSnipsExpandTrigger="<c-z>"
 
-"let python_highlight_all=1
+let python_highlight_all=1
 
 set laststatus=2
 let g:lightline = {'colorscheme' : 'solarized'}

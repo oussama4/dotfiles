@@ -198,9 +198,6 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #i
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
-# Touchpad controls
-bindsym XF86TouchpadToggle exec $HOME/toggletouchpad.sh # toggle touchpad
-
 # desktop wallpaper
 exec_always feh --bg-scale $HOME/Pictures/wallpaper.png
 
@@ -208,5 +205,5 @@ exec_always feh --bg-scale $HOME/Pictures/wallpaper.png
 exec_always xrandr --output LVDS-1 --off --output DP-1 --off --output VGA-1 --primary --mode 1280x1024 --pos 0x0 --rotate normal
 
 # rofi
-bindsym $mod+d exec rofi -show drun -theme Arc-Dark
+bindsym $mod+d exec rofi -show drun 
 
