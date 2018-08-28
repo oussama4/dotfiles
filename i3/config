@@ -192,6 +192,7 @@ bindsym $mod+shift+x exec i3lock --color "$bg-color"
 exec_always compton -f
 exec_always nm-applet
 exec volumeicon
+exec lxpolkit
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
