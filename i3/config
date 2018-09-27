@@ -30,7 +30,7 @@ font pango:monospace 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec deepin-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -208,3 +208,5 @@ exec_always xrandr --output LVDS-1 --off --output DP-1 --off --output VGA-1 --pr
 # rofi
 bindsym $mod+d exec rofi -show drun 
 
+# keyboard layout
+setxkbmap -layout us,ara -option grp:alt_shift_toggle
