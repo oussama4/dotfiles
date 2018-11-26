@@ -40,7 +40,7 @@ let python_highlight_all=1
 
 set laststatus=2
 let g:lightline = {'colorscheme' : 'solarized'}
-colorscheme solarized
+"colorscheme solarized
 
 let g:go_fmt_command = "goimports"
 

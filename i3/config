@@ -30,7 +30,7 @@ font pango:monospace 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec deepin-terminal
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -194,11 +194,6 @@ exec_always nm-applet
 exec volumeicon
 exec lxpolkit
 
-# Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
-
 # desktop wallpaper
 exec_always feh --bg-scale $HOME/Pictures/wallpaper.png
 
@@ -209,4 +204,4 @@ exec_always xrandr --output LVDS-1 --off --output DP-1 --off --output VGA-1 --pr
 bindsym $mod+d exec rofi -show drun 
 
 # keyboard layout
-setxkbmap -layout us,ara -option grp:alt_shift_toggle
+exec_always setxkbmap -layout us,ara -option grp:ctrl_alt_toggle

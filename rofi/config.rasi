@@ -20,13 +20,13 @@ configuration {
 /*	window-command: "xkill -id {window}";*/
 /*	window-match-fields: "all";*/
 /*	drun-icon-theme: ;*/
-/*	drun-match-fields: "name,generic,exec,categories";*/
+	drun-match-fields: "name,generic,exec,categories";
 /*	disable-history: false;*/
 /*	sort: false;*/
 /*	levenshtein-sort: false;*/
 /*	case-sensitive: false;*/
-/*	cycle: true;*/
-	sidebar-mode: true;
+	cycle: true;
+/*	sidebar-mode: true;*/
 /*	eh: 1;*/
 /*	auto-select: false;*/
 /*	parse-hosts: false;*/
@@ -41,7 +41,7 @@ configuration {
 /*	separator-style: "dash";*/
 /*	hide-scrollbar: false;*/
 	fullscreen: false;
-	fake-transparency: false;
+	fake-transparency: true;
 /*	dpi: -1;*/
 /*	threads: 0;*/
 /*	scrollbar-width: 8;*/
