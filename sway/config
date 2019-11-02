@@ -25,7 +25,7 @@ font pango:Noto Sans 10
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg ~/Pictures/ira_is_mee_122.jpg stretch 
 #
 # Example configuration:
 #
@@ -81,6 +81,9 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
     # start your launcher
     bindsym $mod+d exec $menu
+
+    # lock screen
+    bindsym $mod+Shift+x exec swayidle -f -c #2f343f
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -226,7 +229,10 @@ bar {
 }
 
 default_border none
-
+gaps outer 5
+gaps inner 5
+xwayland disable
 exec mako
+exec_always /usr/lib/polkit-gnome-authentication-agent-1
 
 include /etc/sway/config.d/*

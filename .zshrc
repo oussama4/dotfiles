@@ -104,3 +104,4 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.local/node-v10.14.1-linux-x64/bin
 export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_QPA_PLATFORM=wayland-egl
