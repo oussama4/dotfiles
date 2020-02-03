@@ -8,18 +8,17 @@ packadd minpac
 call minpac#init()
 
 call minpac#add('k-takata/minpac', {'type': 'opt'})
-call minpac#add('Valloric/YouCompleteMe')
+call minpac#add('fatih/vim-go')
 call minpac#add('itchyny/lightline.vim')
+call minpac#add('ycm-core/YouCompleteMe')
 "call minpac#add('altercation/vim-colors-solarized')
-call minpac#add('honza/vim-snippets')
+"call minpac#add('honza/vim-snippets')
 call minpac#add('SirVer/ultisnips')
-"call minpac#add('tpope/vim-commentary')
-"call minpac#add('Shougo/deoplete.nvim')
-"call minpac#add('zchee/deoplete-jedi')
-"call minpac#add('autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'})
+call minpac#add('tpope/vim-commentary')
 
-"let g:deoplete#enable_at_startup = 1
-"let g:LanguageClient_serverCommands = {'python': ['/usr/bin/pyls']}
+" gopls
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 
 " youcompleteme configuration
 let g:ycm_autoclose_preview_window_after_completion=1
