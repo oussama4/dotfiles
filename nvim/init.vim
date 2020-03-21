@@ -11,8 +11,9 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 call minpac#add('fatih/vim-go')
 call minpac#add('itchyny/lightline.vim')
 call minpac#add('ycm-core/YouCompleteMe')
-"call minpac#add('altercation/vim-colors-solarized')
-"call minpac#add('honza/vim-snippets')
+call minpac#add('lifepillar/vim-solarized8')
+call minpac#add('fatih/molokai')
+call minpac#add('honza/vim-snippets')
 call minpac#add('SirVer/ultisnips')
 call minpac#add('tpope/vim-commentary')
 
@@ -24,3 +25,7 @@ let g:go_info_mode='gopls'
 let g:ycm_autoclose_preview_window_after_completion=1
 
 let g:UltiSnipsExpandTrigger="<c-z>"
+
+let g:go_gopls_complete_unimported = 1
+
+colorscheme solarized8
