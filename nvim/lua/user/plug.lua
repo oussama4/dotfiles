@@ -57,6 +57,15 @@ return require('packer').startup(function()
     use "akinsho/bufferline.nvim"
     use "fatih/vim-go"
     use "joshdick/onedark.vim"
+    use "windwp/nvim-autopairs"
+    use "akinsho/toggleterm.nvim"
+    use "phpactor/phpactor"
+    use 'goolord/alpha-nvim'
+    use "github/copilot.vim"
+    use {
+	"nvim-treesitter/nvim-treesitter",
+	run = ":TSUpdate",
+    }
 
     if PACKER_BOOTSTRAP then
 	require("packer").sync()
