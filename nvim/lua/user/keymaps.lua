@@ -21,6 +21,7 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files()<cr>", opts)
-keymap("n", "<c-t>", "<cmd>Telescope live_grep()<cr>", opts)
+keymap("n", "<leader>g", "<cmd>lua require'telescope.builtin'.live_grep()<cr>", opts)
+keymap("n", "<leader>b", "<cmd>lua require'telescope.builtin'.buffers()<cr>", opts)
 
 keymap("n", "<leader>d", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
