@@ -173,33 +173,7 @@ schemes:
       cyan: '#95E6CB'
       white: '#FFFFFF'
 
-colors:
-  primary:
-    background: '#1d1f21'
-    foreground: '#c5c8c6'
-  
-    dim_foreground: '#828482'
-    bright_foreground: '#eaeaea'
-
-  cursor:
-    text: CellBackground
-    cursor: CellForeground
-
-  vi_mode_cursor:
-    text: CellBackground
-    cursor: CellForeground
-  
-  search:
-    matches:
-      foreground: '#000000'
-      background: '#ffffff'
-    focused_match:
-      foreground: CellBackground
-      background: CellForeground
-  
-    bar:
-      background: '#c5c8c6'
-      foreground: '#1d1f21'
+colors: *solarized
 
 font:
   normal:
