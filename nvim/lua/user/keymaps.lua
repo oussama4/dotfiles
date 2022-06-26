@@ -25,3 +25,4 @@ keymap("n", "<leader>g", "<cmd>lua require'telescope.builtin'.live_grep()<cr>", 
 keymap("n", "<leader>b", "<cmd>lua require'telescope.builtin'.buffers()<cr>", opts)
 
 keymap("n", "<leader>d", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
+keymap("n", "<leader>t", ":NvimTreeToggle<cr>", opts)
